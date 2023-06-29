@@ -17,8 +17,8 @@ const Wishlist = () => {
   return (
     <div className='flex justify-around flex-wrap w-[60%] display-block m-auto mt-4 border-2 p-10'>
       {
-        wihslistItems?.map((ele) => (
-          <div className='flex border-2 m-2 shadow-xl'>
+        wihslistItems?.map((ele , i) => (
+          <div key={i} className='flex border-2 m-2 shadow-xl'>
 
             <img className='w-[18rem] h-[18rem'
               src={ele[0].image} alt='product-img' />
