@@ -21,7 +21,7 @@ const Home = () => {
       dispatch(setApiProducts(temp));
     };
     fetchData();
-  },[]);
+  });
 
   const addToWishlist = (payload) => {
     dispatch(setWishlistItems(payload))
